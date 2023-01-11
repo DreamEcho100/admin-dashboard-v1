@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Blue */
+    --color-primary-100: 211 212 222;
+    --color-primary-200: 166 169 190;
+    --color-primary-300: 122 127 157;
+    --color-primary-400: 77 84 125;
+    --color-primary-500: 33 41 92;
+    --color-primary-600: 25 31 69;
+    --color-primary-700: 20 25 55;
+    --color-primary-800: 13 16 37;
+    --color-primary-900: 7 8 18;
+
+    /* Grey */
+    --color-secondary-0: 255 255 255;
+    --color-secondary-10: 246 246 246;
+    --color-secondary-50: 240 240 240;
+    --color-secondary-100: 224 224 224;
+    --color-secondary-200: 194 194 194;
+    --color-secondary-300: 163 163 163;
+    --color-secondary-400: 133 133 133;
+    --color-secondary-500: 102 102 102;
+    --color-secondary-600: 82 82 82;
+    --color-secondary-700: 61 61 61;
+    --color-secondary-800: 41 41 41;
+    --color-secondary-900: 20 20 20;
+    --color-secondary-1000: 0 0 0;
+
+    /* Yellow */
+    --color-tertiary-50: 240 240 240;
+    --color-tertiary-100: 255 246 224;
+    --color-tertiary-200: 255 237 194;
+    --color-tertiary-300: 255 227 163;
+    --color-tertiary-400: 255 218 133;
+    --color-tertiary-500: 255 209 102;
+    --color-tertiary-600: 204 167 82;
+    --color-tertiary-700: 153 125 61;
+    --color-tertiary-800: 102 84 41;
+    --color-tertiary-900: 51 42 20;
+  }
+
+  .dark {
+    /* Blue */
+    --color-primary-100: 7 8 18;
+    --color-primary-200: 13 16 37;
+    --color-primary-300: 20 25 55;
+    --color-primary-400: 25 31 69;
+    --color-primary-500: 33 41 92;
+    --color-primary-600: 77 84 125;
+    --color-primary-700: 122 127 157;
+    --color-primary-800: 166 169 190;
+    --color-primary-900: 211 212 222;
+
+    /* Grey */
+    --color-secondary-0: 0 0 0;
+    --color-secondary-10: 20 20 20;
+    --color-secondary-50: 41 41 41;
+    --color-secondary-100: 61 61 61;
+    --color-secondary-200: 82 82 82;
+    --color-secondary-300: 102 102 102;
+    --color-secondary-400: 133 133 133;
+    --color-secondary-500: 163 163 163;
+    --color-secondary-600: 194 194 194;
+    --color-secondary-700: 224 224 224;
+    --color-secondary-800: 240 240 240;
+    --color-secondary-900: 246 246 246;
+    --color-secondary-1000: 255 255 255;
+
+    /* Yellow */
+    --color-tertiary-50: 51 42 20;
+    --color-tertiary-100: 102 84 41;
+    --color-tertiary-200: 153 125 61;
+    --color-tertiary-300: 204 167 82;
+    --color-tertiary-400: 255 209 102;
+    --color-tertiary-500: 255 218 133;
+    --color-tertiary-600: 255 227 163;
+    --color-tertiary-700: 255 237 194;
+    --color-tertiary-800: 255 246 224;
+    --color-tertiary-900: 240 240 240;
+  }
+}
