@@ -14,8 +14,31 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "noUncheckedIndexedAccess": true
+    "noUncheckedIndexedAccess": true,
+    "baseUrl": ".",
+    "paths": {
+      // "@app/*": ["./src/app/*"],
+      "@components/*": ["./src/components/*"],
+      "@env/*": ["./src/env/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@server/*": ["./src/server/*"],
+      "@ts/*": ["./src/types/*"],
+      "@utils/*": ["./src/utils/*"]
+    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.cjs", "**/*.mjs"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "ts-node": {
+    // https://github.com/TypeStrong/ts-node
+    "swc": true,
+    // Do not forget to `npm i -D tsconfig-paths`
+    "require": ["tsconfig-paths/register"],
+    "esm": true,
+    "experimentalSpecifierResolution": "node",
+    // It is faster to skip typechecking.
+    // Remove if you want ts-node to do typechecking.
+    "transpileOnly": true
+    // "files": true
+  }
 }
