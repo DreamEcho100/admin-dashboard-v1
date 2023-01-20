@@ -80,7 +80,7 @@ const usersProfilesDummyData: Parameters<TPrisma["userProfile"]["create"]>["0"][
   },
   {
     "data": {
-      "city": "Xian’an",
+      "city": "Xian'an",
       "country": "CHN",
       "occupation": "Senior Quality Engineer",
       "phoneNumber": "2982518057",
@@ -1169,7 +1169,7 @@ const usersProfilesDummyData: Parameters<TPrisma["userProfile"]["create"]>["0"][
   },
   {
     "data": {
-      "city": "Ryazan’",
+      "city": "Ryazan'",
       "country": "RUS",
       "occupation": "Safety Technician IV",
       "phoneNumber": "1356228398",
@@ -1675,7 +1675,7 @@ const usersProfilesDummyData: Parameters<TPrisma["userProfile"]["create"]>["0"][
   },
   {
     "data": {
-      "city": "E’zhou",
+      "city": "E'zhou",
       "country": "CHN",
       "occupation": "Mechanical Systems Engineer",
       "phoneNumber": "4964737668",
@@ -3182,7 +3182,7 @@ const usersProfilesDummyData: Parameters<TPrisma["userProfile"]["create"]>["0"][
   },
   {
     "data": {
-      "city": "Hats’avan",
+      "city": "Hats'avan",
       "country": "ARM",
       "occupation": "Web Designer I",
       "phoneNumber": "5559497135",
