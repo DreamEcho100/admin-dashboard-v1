@@ -4,10 +4,9 @@ import Link from "next/link";
 import { signIn, signOut, useSession } from "next-auth/react";
 
 import { api } from "../utils/api";
+import { useState } from "react";
 
 const Home: NextPage = () => {
-  const hello = api.example.hello.useQuery({ text: "from tRPC" });
-
   return (
     <>
       <Head>
@@ -45,9 +44,6 @@ const Home: NextPage = () => {
             </Link>
           </div>
           <div className="flex flex-col items-center gap-2">
-            <p className="text-2xl text-white">
-              {hello.data ? hello.data.greeting : "Loading tRPC query..."}
-            </p>
             <AuthShowcase />
           </div>
         </div>
@@ -59,24 +55,56 @@ const Home: NextPage = () => {
 export default Home;
 
 const AuthShowcase: React.FC = () => {
-  const { data: sessionData } = useSession();
+  const { data: sessionData, status } = useSession();
+  const [isLastPage, setIsLastPage] = useState(false);
 
-  const { data: secretMessage } = api.example.getSecretMessage.useQuery(
-    undefined, // no input
-    { enabled: sessionData?.user !== undefined },
-  );
+  const isEnabled = status === "authenticated" && !isLastPage;
+
+  const getManyTransactions =
+    api.dashboard.clients.transactions.getMany.useInfiniteQuery(
+      {},
+      {
+        enabled: isEnabled,
+        getNextPageParam: (lastPage) => lastPage.nextCursor,
+        onSuccess: (result) => {
+          const lastPage = result.pages[result.pages.length - 1];
+
+          setIsLastPage(!!lastPage?.isLastPage);
+        },
+      }
+    );
 
   return (
     <div className="flex flex-col items-center justify-center gap-4">
       <p className="text-center text-2xl text-white">
         {sessionData && <span>Logged in as {sessionData.user?.name}</span>}
-        {secretMessage && <span> - {secretMessage}</span>}
       </p>
       <button
         className="rounded-full bg-white/10 px-10 py-3 font-semibold text-white no-underline transition hover:bg-white/20"
         onClick={sessionData ? () => void signOut() : () => void signIn()}
       >
-        {sessionData ? "Sign out" : "Sign in"}
+        {status === "loading"
+          ? "Loading..."
+          : sessionData
+          ? "Sign out"
+          : "Sign in"}
+      </button>
+      <pre className="text-white">
+        <code>
+          {JSON.stringify(getManyTransactions.data?.pages.flat(1), null, 2)}
+        </code>
+      </pre>
+      <button
+        className="rounded-full bg-white/10 px-10 py-3 font-semibold text-white no-underline transition hover:bg-white/20"
+        onClick={() => isEnabled && void getManyTransactions.fetchNextPage()}
+        disabled={!isEnabled || getManyTransactions.isLoading}
+      >
+        {status === "loading" ||
+        (getManyTransactions.isLoading && getManyTransactions.isFetching)
+          ? "Loading..."
+          : sessionData
+          ? "Get More"
+          : "unauthenticated"}
       </button>
     </div>
   );

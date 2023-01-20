@@ -1,24 +1,30 @@
+import { env } from "@env/server.mjs";
+
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
+
+import { prisma } from "@server/db";
 
 import type { SafeParseError, ZodFormattedError } from "zod";
 
-import NextAuth, { type NextAuthOptions } from "next-auth";
-import DiscordProvider from "next-auth/providers/discord";
+import type { User, NextAuthOptions } from "next-auth";
+import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 
 import { z } from "zod";
 
 import bcrypt from "bcrypt";
 
-import { env } from "../../../env/server.mjs";
-import { prisma } from "../../../server/db";
-
 export const authOptions: NextAuthOptions = {
   // Include user.id on session
   callbacks: {
-    session({ session, user }) {
+    jwt: ({ token, user }) => {
+      user && (token.user = user);
+
+      return token;
+    },
+    session({ session, token }) {
       if (session.user) {
-        session.user.id = user.id;
+        session.user = token.user as User;
       }
       return session;
     },
@@ -26,10 +32,6 @@ export const authOptions: NextAuthOptions = {
   // Configure one or more authentication providers
   adapter: PrismaAdapter(prisma),
   providers: [
-    DiscordProvider({
-      clientId: env.DISCORD_CLIENT_ID,
-      clientSecret: env.DISCORD_CLIENT_SECRET,
-    }),
     /**
      * ...add more providers here
      *
@@ -57,7 +59,7 @@ export const authOptions: NextAuthOptions = {
         const input = z
           .object({
             email: z.string().email(),
-            password: z.string().min(8),
+            password: z.string(), //.min(8),
           })
           .safeParse(_credentials);
 
@@ -131,6 +133,15 @@ export const authOptions: NextAuthOptions = {
         const user = await prisma.user
           .findFirstOrThrow({
             where: { email: credentials.email },
+            select: {
+              id: true,
+              name: true,
+              email: true,
+              emailVerified: true,
+              image: true,
+              role: true,
+              password: true,
+            },
           })
           .catch((err) => {
             throw new Error(
@@ -140,14 +151,21 @@ export const authOptions: NextAuthOptions = {
             );
           });
 
+        if (!user.password) throw new Error("Password is not found!");
+
         if (!bcrypt.compareSync(credentials.password, user.password))
           throw new Error("Incorrect password!");
 
         // If no error and we have user data, return it
+        user.password = null;
         return user;
       },
     }),
   ],
+  secret: env.NEXTAUTH_SECRET,
+  session: {
+    strategy: "jwt",
+  },
 };
 
 export default NextAuth(authOptions);

@@ -8,6 +8,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d81e000044",
           "cost": 607.91,
           "productsCount": 5,
+          "createdAt": "2021-06-14T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -29,6 +30,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239c72c000193",
           "cost": 2872.78,
           "productsCount": 1,
+          "createdAt": "2020-12-31T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -46,6 +48,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032394441000303",
           "cost": 1988.69,
           "productsCount": 4,
+          "createdAt": "2021-04-24T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -67,6 +70,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395b3300014b",
           "cost": 2417.55,
           "productsCount": 4,
+          "createdAt": "2021-08-10T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -91,6 +95,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239c72c000196",
           "cost": 3944.07,
           "productsCount": 3,
+          "createdAt": "2021-01-02T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -108,6 +113,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d59100034c",
           "cost": 2128.92,
           "productsCount": 1,
+          "createdAt": "2021-09-16T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -125,6 +131,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032398675000138",
           "cost": 15.81,
           "productsCount": 4,
+          "createdAt": "2021-02-09T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -146,6 +153,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d81e000028",
           "cost": 3012.39,
           "productsCount": 2,
+          "createdAt": "2021-05-25T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -163,6 +171,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d81e000037",
           "cost": 1794.9,
           "productsCount": 4,
+          "createdAt": "2021-06-05T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -184,6 +193,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239b7f7000035",
           "cost": 1017.55,
           "productsCount": 3,
+          "createdAt": "2021-03-28T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -205,6 +215,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239c72c00019c",
           "cost": 2455.22,
           "productsCount": 4,
+          "createdAt": "2021-01-07T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -222,6 +233,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239c72c00019d",
           "cost": 479.22,
           "productsCount": 3,
+          "createdAt": "2021-01-08T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -249,6 +261,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239c72c00019e",
           "cost": 2678.42,
           "productsCount": 4,
+          "createdAt": "2021-01-08T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -270,6 +283,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e00001a",
           "cost": 833.05,
           "productsCount": 5,
+          "createdAt": "2021-10-29T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -294,6 +308,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032390a34000342",
           "cost": 2863.68,
           "productsCount": 4,
+          "createdAt": "2021-07-03T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -318,6 +333,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d591000350",
           "cost": 1428.08,
           "productsCount": 5,
+          "createdAt": "2021-09-19T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -342,6 +358,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef0000149",
           "cost": 2683.83,
           "productsCount": 3,
+          "createdAt": "2021-12-21T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -369,6 +386,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239c72c0001a3",
           "cost": 2010.31,
           "productsCount": 2,
+          "createdAt": "2021-01-12T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -390,6 +408,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef000013c",
           "cost": 1484.96,
           "productsCount": 5,
+          "createdAt": "2021-12-12T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -411,6 +430,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239b7f7000042",
           "cost": 2654.51,
           "productsCount": 4,
+          "createdAt": "2021-04-07T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -432,6 +452,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239b7f7000039",
           "cost": 1701.46,
           "productsCount": 2,
+          "createdAt": "2021-03-31T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -456,6 +477,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef0000137",
           "cost": 2612.1,
           "productsCount": 2,
+          "createdAt": "2021-12-08T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -477,6 +499,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032390a34000339",
           "cost": 2839.16,
           "productsCount": 2,
+          "createdAt": "2021-06-27T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -494,6 +517,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e000024",
           "cost": 3888.08,
           "productsCount": 2,
+          "createdAt": "2021-11-06T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -511,6 +535,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395b33000135",
           "cost": 3782.1,
           "productsCount": 4,
+          "createdAt": "2021-07-25T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -528,6 +553,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032390a3400032e",
           "cost": 1003.36,
           "productsCount": 4,
+          "createdAt": "2021-06-19T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -549,6 +575,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef0000140",
           "cost": 2674.7,
           "productsCount": 2,
+          "createdAt": "2021-12-14T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -570,6 +597,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e000021",
           "cost": 3396.07,
           "productsCount": 4,
+          "createdAt": "2021-11-04T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -587,6 +615,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e000044",
           "cost": 1230.6,
           "productsCount": 4,
+          "createdAt": "2021-11-29T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -608,6 +637,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef0000136",
           "cost": 3358.05,
           "productsCount": 2,
+          "createdAt": "2021-12-07T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -625,6 +655,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239c72c0001b1",
           "cost": 3531.1,
           "productsCount": 4,
+          "createdAt": "2021-01-22T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -646,6 +677,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239c72c0001b2",
           "cost": 1702.37,
           "productsCount": 2,
+          "createdAt": "2021-01-23T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -667,6 +699,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395694000022",
           "cost": 1342.61,
           "productsCount": 4,
+          "createdAt": "2021-10-02T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -697,6 +730,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032390a34000340",
           "cost": 522.18,
           "productsCount": 2,
+          "createdAt": "2021-07-02T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -721,6 +755,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395694000026",
           "cost": 1952.66,
           "productsCount": 5,
+          "createdAt": "2021-10-05T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -742,6 +777,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d591000343",
           "cost": 1231.1,
           "productsCount": 5,
+          "createdAt": "2021-09-09T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -766,6 +802,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e000039",
           "cost": 1349.24,
           "productsCount": 5,
+          "createdAt": "2021-11-21T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -787,6 +824,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d59100033f",
           "cost": 3844.04,
           "productsCount": 5,
+          "createdAt": "2021-09-06T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -811,6 +849,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d591000346",
           "cost": 1699.17,
           "productsCount": 4,
+          "createdAt": "2021-09-11T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -835,6 +874,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395694000024",
           "cost": 2269.3,
           "productsCount": 3,
+          "createdAt": "2021-10-03T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -856,6 +896,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d591000331",
           "cost": 1141.49,
           "productsCount": 5,
+          "createdAt": "2021-08-27T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -883,6 +924,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239569400003e",
           "cost": 3830.6,
           "productsCount": 5,
+          "createdAt": "2021-10-22T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -904,6 +946,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239c72c0001bd",
           "cost": 2329.2,
           "productsCount": 5,
+          "createdAt": "2021-01-31T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -931,6 +974,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e00003a",
           "cost": 3790.45,
           "productsCount": 1,
+          "createdAt": "2021-11-22T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -948,6 +992,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e00002f",
           "cost": 2709.97,
           "productsCount": 4,
+          "createdAt": "2021-11-14T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -972,6 +1017,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239867500012e",
           "cost": 3934.55,
           "productsCount": 2,
+          "createdAt": "2021-02-02T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -993,6 +1039,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239444100030b",
           "cost": 3241.98,
           "productsCount": 4,
+          "createdAt": "2021-04-30T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1014,6 +1061,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395694000034",
           "cost": 542.47,
           "productsCount": 3,
+          "createdAt": "2021-10-15T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1035,6 +1083,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032398675000131",
           "cost": 2996.52,
           "productsCount": 3,
+          "createdAt": "2021-02-04T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1056,6 +1105,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f0323944410002f4",
           "cost": 1045.99,
           "productsCount": 1,
+          "createdAt": "2021-04-13T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -1073,6 +1123,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e00002c",
           "cost": 3971,
           "productsCount": 2,
+          "createdAt": "2021-11-12T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1094,6 +1145,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239b7f7000036",
           "cost": 1800.07,
           "productsCount": 1,
+          "createdAt": "2021-03-29T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -1111,6 +1163,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d59100034e",
           "cost": 2001.58,
           "productsCount": 5,
+          "createdAt": "2021-09-17T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -1128,6 +1181,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032398675000150",
           "cost": 2249.24,
           "productsCount": 1,
+          "createdAt": "2021-02-27T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -1145,6 +1199,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d591000344",
           "cost": 252.61,
           "productsCount": 2,
+          "createdAt": "2021-09-10T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -1162,6 +1217,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef000014e",
           "cost": 2403.19,
           "productsCount": 1,
+          "createdAt": "2021-12-25T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1183,6 +1239,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239867500014b",
           "cost": 1856.78,
           "productsCount": 4,
+          "createdAt": "2021-02-23T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -1200,6 +1257,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395b33000136",
           "cost": 235.02,
           "productsCount": 2,
+          "createdAt": "2021-07-26T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -1217,6 +1275,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef0000139",
           "cost": 2691.9,
           "productsCount": 2,
+          "createdAt": "2021-12-09T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -1234,6 +1293,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239867500013e",
           "cost": 1004.06,
           "productsCount": 4,
+          "createdAt": "2021-02-14T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1258,6 +1318,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d81e000026",
           "cost": 658.96,
           "productsCount": 3,
+          "createdAt": "2021-05-23T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1279,6 +1340,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e00003c",
           "cost": 1159.62,
           "productsCount": 2,
+          "createdAt": "2021-11-23T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1300,6 +1362,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032398675000142",
           "cost": 311.93,
           "productsCount": 1,
+          "createdAt": "2021-02-17T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -1317,6 +1380,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032390a34000341",
           "cost": 2198.03,
           "productsCount": 3,
+          "createdAt": "2021-07-02T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1341,6 +1405,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395b33000133",
           "cost": 2916.45,
           "productsCount": 3,
+          "createdAt": "2021-07-24T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1362,6 +1427,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032398675000147",
           "cost": 1416.51,
           "productsCount": 1,
+          "createdAt": "2021-02-20T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1383,6 +1449,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032390a3400034f",
           "cost": 424.78,
           "productsCount": 3,
+          "createdAt": "2021-07-13T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -1400,6 +1467,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e00003e",
           "cost": 1677,
           "productsCount": 1,
+          "createdAt": "2021-11-25T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1421,6 +1489,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239b7f7000028",
           "cost": 1219.98,
           "productsCount": 1,
+          "createdAt": "2021-03-19T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1442,6 +1511,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f0323944410002f3",
           "cost": 1751.19,
           "productsCount": 5,
+          "createdAt": "2021-04-12T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -1459,6 +1529,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d81e00001f",
           "cost": 1523.55,
           "productsCount": 1,
+          "createdAt": "2021-05-18T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -1476,6 +1547,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239867500014f",
           "cost": 1729.13,
           "productsCount": 3,
+          "createdAt": "2021-02-26T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1500,6 +1572,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239569400002a",
           "cost": 2965.69,
           "productsCount": 2,
+          "createdAt": "2021-10-08T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1521,6 +1594,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032390a3400034e",
           "cost": 1059.47,
           "productsCount": 4,
+          "createdAt": "2021-07-12T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1545,6 +1619,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef000013e",
           "cost": 3432.11,
           "productsCount": 5,
+          "createdAt": "2021-12-13T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1566,6 +1641,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d81e00002a",
           "cost": 2519.39,
           "productsCount": 3,
+          "createdAt": "2021-05-26T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1587,6 +1663,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef000013d",
           "cost": 2263.82,
           "productsCount": 3,
+          "createdAt": "2021-12-12T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -1604,6 +1681,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d81e00003c",
           "cost": 2215.73,
           "productsCount": 5,
+          "createdAt": "2021-06-08T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1628,6 +1706,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef0000144",
           "cost": 3276.83,
           "productsCount": 3,
+          "createdAt": "2021-12-17T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1649,6 +1728,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef0000132",
           "cost": 2694.52,
           "productsCount": 4,
+          "createdAt": "2021-12-04T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1670,6 +1750,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395b3300014a",
           "cost": 108.35,
           "productsCount": 4,
+          "createdAt": "2021-08-09T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1691,6 +1772,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239b7f7000019",
           "cost": 2503.88,
           "productsCount": 3,
+          "createdAt": "2021-03-08T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1712,6 +1794,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239b7f700001a",
           "cost": 2318.07,
           "productsCount": 2,
+          "createdAt": "2021-03-08T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1733,6 +1816,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395694000028",
           "cost": 1210.4,
           "productsCount": 4,
+          "createdAt": "2021-10-06T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1757,6 +1841,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d81e000040",
           "cost": 3532.94,
           "productsCount": 3,
+          "createdAt": "2021-06-11T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -1774,6 +1859,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d81e00003d",
           "cost": 3155.56,
           "productsCount": 2,
+          "createdAt": "2021-06-09T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -1791,6 +1877,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239b7f7000034",
           "cost": 3134.54,
           "productsCount": 1,
+          "createdAt": "2021-03-27T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1812,6 +1899,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395b3300013c",
           "cost": 543.75,
           "productsCount": 5,
+          "createdAt": "2021-07-30T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1833,6 +1921,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239b7f7000021",
           "cost": 1093.3,
           "productsCount": 5,
+          "createdAt": "2021-03-13T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -1850,6 +1939,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239b7f7000022",
           "cost": 1630.72,
           "productsCount": 4,
+          "createdAt": "2021-03-14T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1871,6 +1961,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239b7f7000023",
           "cost": 776.76,
           "productsCount": 3,
+          "createdAt": "2021-03-15T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -1888,6 +1979,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef0000147",
           "cost": 3716.79,
           "productsCount": 1,
+          "createdAt": "2021-12-20T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -1905,6 +1997,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239b7f7000026",
           "cost": 2729.82,
           "productsCount": 2,
+          "createdAt": "2021-03-17T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -1922,6 +2015,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef000013a",
           "cost": 666.35,
           "productsCount": 2,
+          "createdAt": "2021-12-10T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1943,6 +2037,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d81e000042",
           "cost": 1308.84,
           "productsCount": 3,
+          "createdAt": "2021-06-13T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -1960,6 +2055,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239b7f700002b",
           "cost": 923.63,
           "productsCount": 2,
+          "createdAt": "2021-03-21T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -1981,6 +2077,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032390a3400033b",
           "cost": 3183.64,
           "productsCount": 5,
+          "createdAt": "2021-06-28T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2005,6 +2102,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d59100034d",
           "cost": 3647.52,
           "productsCount": 4,
+          "createdAt": "2021-09-16T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2026,6 +2124,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239b7f700002e",
           "cost": 2546.93,
           "productsCount": 3,
+          "createdAt": "2021-03-23T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2050,6 +2149,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef0000145",
           "cost": 3004.11,
           "productsCount": 4,
+          "createdAt": "2021-12-18T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2074,6 +2174,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e000046",
           "cost": 1664.34,
           "productsCount": 1,
+          "createdAt": "2021-12-01T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2095,6 +2196,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032390a3400032d",
           "cost": 366.28,
           "productsCount": 2,
+          "createdAt": "2021-06-18T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -2112,6 +2214,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e00002a",
           "cost": 621.51,
           "productsCount": 1,
+          "createdAt": "2021-11-10T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -2129,6 +2232,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239b7f7000044",
           "cost": 1008.2,
           "productsCount": 2,
+          "createdAt": "2021-04-08T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -2146,6 +2250,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d591000347",
           "cost": 3423.15,
           "productsCount": 3,
+          "createdAt": "2021-09-12T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -2163,6 +2268,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e00001f",
           "cost": 478.68,
           "productsCount": 2,
+          "createdAt": "2021-11-02T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -2180,6 +2286,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239b7f700003c",
           "cost": 61.48,
           "productsCount": 5,
+          "createdAt": "2021-04-02T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2201,6 +2308,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032390a34000346",
           "cost": 3120.14,
           "productsCount": 2,
+          "createdAt": "2021-07-06T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -2218,6 +2326,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e00001d",
           "cost": 732.46,
           "productsCount": 5,
+          "createdAt": "2021-11-01T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2239,6 +2348,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239b7f7000041",
           "cost": 2292.43,
           "productsCount": 2,
+          "createdAt": "2021-04-06T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -2256,6 +2366,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d81e000022",
           "cost": 2015.04,
           "productsCount": 4,
+          "createdAt": "2021-05-20T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -2273,6 +2384,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d81e000043",
           "cost": 944.22,
           "productsCount": 2,
+          "createdAt": "2021-06-13T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -2290,6 +2402,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d591000345",
           "cost": 752.29,
           "productsCount": 4,
+          "createdAt": "2021-09-11T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2320,6 +2433,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239569400002e",
           "cost": 501.37,
           "productsCount": 1,
+          "createdAt": "2021-10-10T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2341,6 +2455,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e000032",
           "cost": 62.48,
           "productsCount": 5,
+          "createdAt": "2021-11-16T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2362,6 +2477,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f0323944410002f7",
           "cost": 711.15,
           "productsCount": 1,
+          "createdAt": "2021-04-15T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -2379,6 +2495,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f0323944410002f8",
           "cost": 192.99,
           "productsCount": 5,
+          "createdAt": "2021-04-16T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2403,6 +2520,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395b3300014f",
           "cost": 1846.55,
           "productsCount": 1,
+          "createdAt": "2021-08-13T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -2420,6 +2538,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d591000342",
           "cost": 2894.43,
           "productsCount": 2,
+          "createdAt": "2021-09-08T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -2437,6 +2556,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032390a34000353",
           "cost": 2356.11,
           "productsCount": 1,
+          "createdAt": "2021-07-16T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2458,6 +2578,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef000014b",
           "cost": 808.18,
           "productsCount": 5,
+          "createdAt": "2021-12-22T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2479,6 +2600,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d591000351",
           "cost": 2584.93,
           "productsCount": 5,
+          "createdAt": "2021-09-19T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2503,6 +2625,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f0323944410002ff",
           "cost": 180.64,
           "productsCount": 4,
+          "createdAt": "2021-04-21T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2527,6 +2650,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d81e000035",
           "cost": 2371.02,
           "productsCount": 4,
+          "createdAt": "2021-06-03T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2548,6 +2672,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395694000038",
           "cost": 1878.32,
           "productsCount": 2,
+          "createdAt": "2021-10-18T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2569,6 +2694,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e00001c",
           "cost": 3514.81,
           "productsCount": 1,
+          "createdAt": "2021-10-31T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2590,6 +2716,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d59100034f",
           "cost": 99.52,
           "productsCount": 5,
+          "createdAt": "2021-09-18T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2614,6 +2741,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032394441000305",
           "cost": 20.45,
           "productsCount": 5,
+          "createdAt": "2021-04-26T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2638,6 +2766,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d59100034a",
           "cost": 1149.82,
           "productsCount": 1,
+          "createdAt": "2021-09-14T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -2655,6 +2784,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032394441000307",
           "cost": 2395.14,
           "productsCount": 4,
+          "createdAt": "2021-04-27T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2676,6 +2806,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d81e00003e",
           "cost": 3956.27,
           "productsCount": 2,
+          "createdAt": "2021-06-10T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2700,6 +2831,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032394441000309",
           "cost": 1668.42,
           "productsCount": 1,
+          "createdAt": "2021-04-28T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -2717,6 +2849,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032390a34000332",
           "cost": 2596.99,
           "productsCount": 2,
+          "createdAt": "2021-06-22T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2741,6 +2874,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e000034",
           "cost": 1159.29,
           "productsCount": 3,
+          "createdAt": "2021-11-17T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -2758,6 +2892,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e000019",
           "cost": 531.23,
           "productsCount": 1,
+          "createdAt": "2021-10-29T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -2775,6 +2910,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239444100030e",
           "cost": 882.19,
           "productsCount": 4,
+          "createdAt": "2021-05-02T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2799,6 +2935,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239444100030f",
           "cost": 3720.71,
           "productsCount": 3,
+          "createdAt": "2021-05-03T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2823,6 +2960,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e000028",
           "cost": 118.18,
           "productsCount": 2,
+          "createdAt": "2021-11-09T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2847,6 +2985,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032394441000312",
           "cost": 1751.67,
           "productsCount": 5,
+          "createdAt": "2021-05-05T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -2864,6 +3003,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395b33000151",
           "cost": 2903.88,
           "productsCount": 5,
+          "createdAt": "2021-08-15T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -2881,6 +3021,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032394441000314",
           "cost": 562.1,
           "productsCount": 1,
+          "createdAt": "2021-05-07T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -2898,6 +3039,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032394441000315",
           "cost": 323.69,
           "productsCount": 2,
+          "createdAt": "2021-05-07T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -2915,6 +3057,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032394441000318",
           "cost": 1941.33,
           "productsCount": 2,
+          "createdAt": "2021-05-09T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -2932,6 +3075,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239444100031a",
           "cost": 896.38,
           "productsCount": 1,
+          "createdAt": "2021-05-11T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2953,6 +3097,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239444100031b",
           "cost": 3993.14,
           "productsCount": 4,
+          "createdAt": "2021-05-12T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2974,6 +3119,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef0000134",
           "cost": 2182.98,
           "productsCount": 1,
+          "createdAt": "2021-12-06T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -2995,6 +3141,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e00002d",
           "cost": 596.77,
           "productsCount": 4,
+          "createdAt": "2021-11-12T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3016,6 +3163,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef000013b",
           "cost": 2033.47,
           "productsCount": 5,
+          "createdAt": "2021-12-11T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3037,6 +3185,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032390a34000345",
           "cost": 3301.41,
           "productsCount": 4,
+          "createdAt": "2021-07-05T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3061,6 +3210,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e00002b",
           "cost": 2036.19,
           "productsCount": 3,
+          "createdAt": "2021-11-11T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -3078,6 +3228,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d591000349",
           "cost": 226.39,
           "productsCount": 4,
+          "createdAt": "2021-09-13T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3099,6 +3250,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d81e00002c",
           "cost": 1390.8,
           "productsCount": 1,
+          "createdAt": "2021-05-28T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -3116,6 +3268,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d81e000021",
           "cost": 2512.96,
           "productsCount": 5,
+          "createdAt": "2021-05-20T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3137,6 +3290,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395b33000155",
           "cost": 3487.3,
           "productsCount": 3,
+          "createdAt": "2021-08-17T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3158,6 +3312,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d81e000025",
           "cost": 479,
           "productsCount": 5,
+          "createdAt": "2021-05-23T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -3175,6 +3330,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef0000138",
           "cost": 2963.93,
           "productsCount": 1,
+          "createdAt": "2021-12-09T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3196,6 +3352,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d81e00002b",
           "cost": 3852.49,
           "productsCount": 1,
+          "createdAt": "2021-05-27T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3217,6 +3374,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d81e00002d",
           "cost": 3458.65,
           "productsCount": 1,
+          "createdAt": "2021-05-28T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -3234,6 +3392,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d81e00002e",
           "cost": 1891.32,
           "productsCount": 3,
+          "createdAt": "2021-05-29T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -3251,6 +3410,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e000043",
           "cost": 3808.93,
           "productsCount": 3,
+          "createdAt": "2021-11-28T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -3268,6 +3428,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d591000357",
           "cost": 22.7,
           "productsCount": 1,
+          "createdAt": "2021-09-24T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -3285,6 +3446,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d81e000033",
           "cost": 2149.4,
           "productsCount": 3,
+          "createdAt": "2021-06-02T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3306,6 +3468,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395694000036",
           "cost": 1959.18,
           "productsCount": 4,
+          "createdAt": "2021-10-16T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3327,6 +3490,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032390a34000334",
           "cost": 219.07,
           "productsCount": 4,
+          "createdAt": "2021-06-23T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3348,6 +3512,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d81e000045",
           "cost": 493.94,
           "productsCount": 3,
+          "createdAt": "2021-06-15T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -3365,6 +3530,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d59100032e",
           "cost": 1894.09,
           "productsCount": 4,
+          "createdAt": "2021-08-25T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -3382,6 +3548,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395694000045",
           "cost": 3061.74,
           "productsCount": 3,
+          "createdAt": "2021-10-27T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3403,6 +3570,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395b33000145",
           "cost": 2951.06,
           "productsCount": 5,
+          "createdAt": "2021-08-06T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3430,6 +3598,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032390a3400032f",
           "cost": 412.99,
           "productsCount": 3,
+          "createdAt": "2021-06-19T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3451,6 +3620,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef000013f",
           "cost": 2686.67,
           "productsCount": 4,
+          "createdAt": "2021-12-14T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3472,6 +3642,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef0000130",
           "cost": 3219.87,
           "productsCount": 3,
+          "createdAt": "2021-12-03T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3496,6 +3667,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032390a34000336",
           "cost": 1933.72,
           "productsCount": 5,
+          "createdAt": "2021-06-24T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3517,6 +3689,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e000042",
           "cost": 1290.81,
           "productsCount": 1,
+          "createdAt": "2021-11-28T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -3534,6 +3707,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef0000131",
           "cost": 554.41,
           "productsCount": 3,
+          "createdAt": "2021-12-03T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3555,6 +3729,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e000029",
           "cost": 3361.11,
           "productsCount": 5,
+          "createdAt": "2021-11-09T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3582,6 +3757,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395b33000137",
           "cost": 2687.49,
           "productsCount": 4,
+          "createdAt": "2021-07-27T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3606,6 +3782,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef0000148",
           "cost": 2715.02,
           "productsCount": 5,
+          "createdAt": "2021-12-20T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3627,6 +3804,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e000040",
           "cost": 1844.95,
           "productsCount": 5,
+          "createdAt": "2021-11-26T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3648,6 +3826,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef000014c",
           "cost": 1124.55,
           "productsCount": 3,
+          "createdAt": "2021-12-23T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -3665,6 +3844,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef0000143",
           "cost": 3740.97,
           "productsCount": 2,
+          "createdAt": "2021-12-17T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3686,6 +3866,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef000012e",
           "cost": 1109.75,
           "productsCount": 2,
+          "createdAt": "2021-12-01T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3707,6 +3888,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395b3300015b",
           "cost": 899.75,
           "productsCount": 4,
+          "createdAt": "2021-08-22T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3731,6 +3913,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d59100033e",
           "cost": 124.21,
           "productsCount": 5,
+          "createdAt": "2021-09-05T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3752,6 +3935,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395694000037",
           "cost": 3990.02,
           "productsCount": 1,
+          "createdAt": "2021-10-17T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3773,6 +3957,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e00003f",
           "cost": 1406.13,
           "productsCount": 4,
+          "createdAt": "2021-11-25T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3797,6 +3982,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef0000146",
           "cost": 1232.26,
           "productsCount": 5,
+          "createdAt": "2021-12-19T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3821,6 +4007,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef0000135",
           "cost": 616.02,
           "productsCount": 4,
+          "createdAt": "2021-12-06T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3848,6 +4035,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032390a34000358",
           "cost": 1689.74,
           "productsCount": 4,
+          "createdAt": "2021-07-19T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3869,6 +4057,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395b3300012e",
           "cost": 838.14,
           "productsCount": 4,
+          "createdAt": "2021-07-20T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3893,6 +4082,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e000036",
           "cost": 1712.97,
           "productsCount": 3,
+          "createdAt": "2021-11-19T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3917,6 +4107,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395b33000131",
           "cost": 107.48,
           "productsCount": 3,
+          "createdAt": "2021-07-22T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3941,6 +4132,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239569400003d",
           "cost": 3816.89,
           "productsCount": 2,
+          "createdAt": "2021-10-21T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -3958,6 +4150,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395b33000134",
           "cost": 3647.7,
           "productsCount": 3,
+          "createdAt": "2021-07-24T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -3975,6 +4168,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395b33000138",
           "cost": 1427.24,
           "productsCount": 5,
+          "createdAt": "2021-07-27T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -3999,6 +4193,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395b33000139",
           "cost": 2828.47,
           "productsCount": 2,
+          "createdAt": "2021-07-28T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4020,6 +4215,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395b33000147",
           "cost": 3313.44,
           "productsCount": 3,
+          "createdAt": "2021-08-07T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4047,6 +4243,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395694000032",
           "cost": 1999.86,
           "productsCount": 2,
+          "createdAt": "2021-10-13T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -4064,6 +4261,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d59100033a",
           "cost": 3228.67,
           "productsCount": 3,
+          "createdAt": "2021-09-03T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4085,6 +4283,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395b33000140",
           "cost": 783.69,
           "productsCount": 1,
+          "createdAt": "2021-08-02T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -4102,6 +4301,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef000012f",
           "cost": 3075.49,
           "productsCount": 5,
+          "createdAt": "2021-12-02T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4123,6 +4323,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e00001e",
           "cost": 1846.95,
           "productsCount": 5,
+          "createdAt": "2021-11-01T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4144,6 +4345,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e000033",
           "cost": 41.64,
           "productsCount": 4,
+          "createdAt": "2021-11-17T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4168,6 +4370,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395b33000149",
           "cost": 2824.68,
           "productsCount": 5,
+          "createdAt": "2021-08-09T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4189,6 +4392,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e000026",
           "cost": 3277.91,
           "productsCount": 3,
+          "createdAt": "2021-11-07T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4210,6 +4414,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395b33000153",
           "cost": 2493.86,
           "productsCount": 3,
+          "createdAt": "2021-08-16T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4231,6 +4436,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395b33000156",
           "cost": 2745.09,
           "productsCount": 1,
+          "createdAt": "2021-08-18T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -4248,6 +4454,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395b33000157",
           "cost": 3031.51,
           "productsCount": 2,
+          "createdAt": "2021-08-19T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -4265,6 +4472,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395b33000158",
           "cost": 1693.53,
           "productsCount": 3,
+          "createdAt": "2021-08-20T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4286,6 +4494,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395b33000159",
           "cost": 1446.87,
           "productsCount": 4,
+          "createdAt": "2021-08-20T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4310,6 +4519,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395b3300015a",
           "cost": 2192.21,
           "productsCount": 3,
+          "createdAt": "2021-08-21T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4334,6 +4544,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e00002e",
           "cost": 1729.43,
           "productsCount": 1,
+          "createdAt": "2021-11-13T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -4351,6 +4562,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d59100032c",
           "cost": 502.51,
           "productsCount": 1,
+          "createdAt": "2021-08-23T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4372,6 +4584,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef0000153",
           "cost": 968.95,
           "productsCount": 5,
+          "createdAt": "2021-12-28T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -4389,6 +4602,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef0000142",
           "cost": 2261.28,
           "productsCount": 1,
+          "createdAt": "2021-12-16T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4410,6 +4624,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e000041",
           "cost": 1058.08,
           "productsCount": 1,
+          "createdAt": "2021-11-27T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4431,6 +4646,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d591000334",
           "cost": 1358.84,
           "productsCount": 2,
+          "createdAt": "2021-08-29T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4452,6 +4668,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef000014f",
           "cost": 1702.69,
           "productsCount": 2,
+          "createdAt": "2021-12-25T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4473,6 +4690,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d591000337",
           "cost": 2297.98,
           "productsCount": 3,
+          "createdAt": "2021-08-31T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4497,6 +4715,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d59100033b",
           "cost": 3502.96,
           "productsCount": 2,
+          "createdAt": "2021-09-03T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -4514,6 +4733,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d591000340",
           "cost": 1073.24,
           "productsCount": 5,
+          "createdAt": "2021-09-07T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4538,6 +4758,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239569400003f",
           "cost": 2530.27,
           "productsCount": 1,
+          "createdAt": "2021-10-23T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -4555,6 +4776,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239d59100034b",
           "cost": 1802.53,
           "productsCount": 2,
+          "createdAt": "2021-09-15T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4576,6 +4798,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef0000152",
           "cost": 919.82,
           "productsCount": 3,
+          "createdAt": "2021-12-28T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -4593,6 +4816,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef000014a",
           "cost": 2538.89,
           "productsCount": 2,
+          "createdAt": "2021-12-22T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -4610,6 +4834,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e000023",
           "cost": 668.7,
           "productsCount": 1,
+          "createdAt": "2021-11-05T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4631,6 +4856,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef0000141",
           "cost": 2984.15,
           "productsCount": 4,
+          "createdAt": "2021-12-15T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4658,6 +4884,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef000014d",
           "cost": 1471.05,
           "productsCount": 2,
+          "createdAt": "2021-12-24T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4679,6 +4906,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239569400001e",
           "cost": 1178.68,
           "productsCount": 2,
+          "createdAt": "2021-09-29T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4700,6 +4928,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e000020",
           "cost": 2963.61,
           "productsCount": 4,
+          "createdAt": "2021-11-03T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4721,6 +4950,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239569400002b",
           "cost": 3961.87,
           "productsCount": 4,
+          "createdAt": "2021-10-08T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4742,6 +4972,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef0000154",
           "cost": 3889.06,
           "productsCount": 4,
+          "createdAt": "2021-12-29T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4763,6 +4994,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395694000043",
           "cost": 1592.8,
           "productsCount": 5,
+          "createdAt": "2021-10-26T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4787,6 +5019,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239569400002f",
           "cost": 3787.19,
           "productsCount": 2,
+          "createdAt": "2021-10-11T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -4804,6 +5037,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395694000030",
           "cost": 2269.68,
           "productsCount": 3,
+          "createdAt": "2021-10-12T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4828,6 +5062,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239569400003a",
           "cost": 933.48,
           "productsCount": 4,
+          "createdAt": "2021-10-19T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4852,6 +5087,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395694000040",
           "cost": 1557.75,
           "productsCount": 2,
+          "createdAt": "2021-10-24T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4873,6 +5109,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395694000041",
           "cost": 1031.98,
           "productsCount": 4,
+          "createdAt": "2021-10-24T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4894,6 +5131,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395694000042",
           "cost": 2382.42,
           "productsCount": 5,
+          "createdAt": "2021-10-25T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4918,6 +5156,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032395694000044",
           "cost": 3855.51,
           "productsCount": 1,
+          "createdAt": "2021-10-27T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -4935,6 +5174,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e000025",
           "cost": 88.81,
           "productsCount": 2,
+          "createdAt": "2021-11-06T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -4952,6 +5192,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e000027",
           "cost": 2457.33,
           "productsCount": 4,
+          "createdAt": "2021-11-08T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4973,6 +5214,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e000031",
           "cost": 2163.93,
           "productsCount": 4,
+          "createdAt": "2021-11-15T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -4994,6 +5236,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e000037",
           "cost": 1845.49,
           "productsCount": 3,
+          "createdAt": "2021-11-20T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -5011,6 +5254,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e000038",
           "cost": 33.34,
           "productsCount": 5,
+          "createdAt": "2021-11-20T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -5035,6 +5279,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f032396b8e000045",
           "cost": 2460.5,
           "productsCount": 1,
+          "createdAt": "2021-11-30T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -5052,6 +5297,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef0000133",
           "cost": 1937.53,
           "productsCount": 4,
+          "createdAt": "2021-12-05T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -5079,6 +5325,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef0000150",
           "cost": 1864.03,
           "productsCount": 1,
+          "createdAt": "2021-12-26T00:00:00.000Z",
           "products": {
             "connect": []
           }
@@ -5096,6 +5343,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef0000151",
           "cost": 3880.97,
           "productsCount": 3,
+          "createdAt": "2021-12-27T00:00:00.000Z",
           "products": {
             "connect": [
               {
@@ -5117,6 +5365,7 @@ const users_transactionDummyData: Parameters<TPrisma["user"]["update"]>["0"][] =
           "id": "63701d74f03239bef0000155",
           "cost": 1720.85,
           "productsCount": 3,
+          "createdAt": "2021-12-30T00:00:00.000Z",
           "products": {
             "connect": []
           }

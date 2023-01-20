@@ -75,7 +75,7 @@ model User {
   emailVerified DateTime?
   image         String?
 
-  password String
+  password String?
 
   // :P
   role UserRole? @default(admin)
@@ -89,13 +89,30 @@ model User {
   transactions  Transaction[]
 }
 
+model Country {
+  name String @id
+
+  stats       CountryStats?
+  UserProfile UserProfile[]
+}
+
+model CountryStats {
+  countryName String  @id
+  Country     Country @relation(fields: [countryName], references: [name])
+
+  users Int
+}
+
 model UserProfile {
   userId String @id
   User   User   @relation(fields: [userId], references: [id])
 
-  city        String
-  state       String?
-  country     String
+  city  String
+  state String?
+
+  country String
+  Country Country @relation(fields: [country], references: [name])
+
   occupation  String
   phoneNumber String
 
@@ -119,30 +136,17 @@ model AffiliateStat {
 
   affiliateSalesCount Int @default(0)
 
-  createdAt      DateTime        @default(now())
-  affiliateSales AffiliateSale[]
-}
-
-model AffiliateSale {
-  id String @id @default(uuid())
-
-  affiliateStatId String
-  AffiliateStat   AffiliateStat @relation(fields: [affiliateStatId], references: [id])
-
-  createdAt DateTime @default(now())
-
-  transactionsCount Int @default(0)
-
+  createdAt      DateTime      @default(now())
   affiliateSales Transaction[]
 }
 
 model Transaction {
   id String @id @default(uuid())
 
-  userId           String
-  User             User           @relation(fields: [userId], references: [id])
-  affiliateSalesId String?
-  AffiliateSale    AffiliateSale? @relation(fields: [affiliateSalesId], references: [id])
+  userId          String
+  User            User           @relation(fields: [userId], references: [id])
+  AffiliateStat   AffiliateStat? @relation(fields: [affiliateStatId], references: [id])
+  affiliateStatId String?
 
   cost Float
 
@@ -177,7 +181,7 @@ model Product {
   updatedAt DateTime? @updatedAt
 
   transactions Transaction[]
-  productStats ProductStat[]
+  stats        ProductStat[]
 }
 
 // 

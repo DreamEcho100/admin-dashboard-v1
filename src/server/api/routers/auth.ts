@@ -2,7 +2,11 @@ import bcrypt from "bcrypt";
 
 import { z } from "zod";
 
-import { createTRPCRouter, publicProcedure, protectedProcedure } from "../trpc";
+import {
+  createTRPCRouter,
+  publicProcedure,
+  protectedUsersOnlyProcedure,
+} from "../trpc";
 
 export const authRouter = createTRPCRouter({
   signUp: publicProcedure
@@ -18,7 +22,7 @@ export const authRouter = createTRPCRouter({
         state: z.string(),
       })
     )
-    .query(async ({ ctx, input }) => {
+    .mutation(async ({ ctx, input }) => {
       const salt = bcrypt.genSaltSync(10);
 
       // Hash the password
@@ -42,7 +46,27 @@ export const authRouter = createTRPCRouter({
       });
     }),
 
-  completeProfile: protectedProcedure.query(() => {
-    // return "you can now see this secret message!";
-  }),
+  completeProfile: protectedUsersOnlyProcedure
+    .input(
+      z.object({
+        city: z.string(),
+        country: z.string(),
+        occupation: z.string(),
+        phoneNumber: z.string(),
+        state: z.string(),
+      })
+    )
+    .mutation(async ({ ctx, input }) => {
+      await ctx.prisma.userProfile.create({
+        data: {
+          userId: ctx.session.user.id,
+          city: input.city,
+          country: input.country,
+          occupation: input.occupation,
+          phoneNumber: input.phoneNumber,
+          state: input.state,
+        },
+        select: null,
+      });
+    }),
 });

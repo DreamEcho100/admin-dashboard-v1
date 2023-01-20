@@ -1,10 +1,4 @@
-import type {
-  Category,
-  Product,
-  User,
-  Prisma,
-  UserProfile,
-} from "@prisma/client";
+import type { Category, Product, User, Prisma } from "@prisma/client";
 import { Months } from "@prisma/client";
 
 import fs from "fs";
@@ -23,6 +17,8 @@ import {
 } from "../../src/utils/data/dummy";
 
 import type { TPrisma } from ".";
+
+import { getCountryISO2To3 } from "./utils/country-iso-2-to-3";
 
 const isAValidMonth = (month: unknown): month is Months =>
   typeof month === "string" && !!(month in Months);
@@ -71,32 +67,51 @@ export default ${fileName}DummyData;
   });
 };
 
+const getDaysInMilliseconds = (day: number) => day * 1000 * 24 * 60 * 60;
+
 const formatUserAndUserProfileDummyData = async () => {
   const salt = bcrypt.genSaltSync(10);
 
   const users: Omit<User, "createdAt" | "emailVerified" | "image">[] = [];
-  const usersProfiles: Omit<UserProfile, "createdAt" | "updatedAt">[] = [];
+  const usersProfiles: Parameters<TPrisma["userProfile"]["create"]>["0"][] = [];
+  const countries: Parameters<TPrisma["country"]["create"]>["0"][] = [];
+  const country_users_counter_Map: Record<string, number> = {};
 
   dataUser.forEach(
-    ({
-      _id,
-      city,
-      country,
-      email,
-      name,
-      occupation,
-      password,
-      phoneNumber,
-      role,
-      state,
-    }) => {
-      usersProfiles.push({
+    (
+      {
+        _id,
         city,
         country,
+        email,
+        name,
         occupation,
+        password,
         phoneNumber,
+        role,
         state,
-        userId: _id,
+      },
+      index
+    ) => {
+      const countryISO3 = getCountryISO2To3(country);
+      if (!countryISO3) return;
+
+      country_users_counter_Map[countryISO3] =
+        (country_users_counter_Map[countryISO3] || 0) + 1;
+
+      usersProfiles.push({
+        data: {
+          city,
+          country: countryISO3,
+          occupation,
+          phoneNumber,
+          state,
+          userId: _id,
+          createdAt: new Date(
+            new Date("2021-12-30").getTime() -
+              getDaysInMilliseconds(365 + index)
+          ),
+        },
       });
       users.push({
         id: _id,
@@ -108,27 +123,42 @@ const formatUserAndUserProfileDummyData = async () => {
     }
   );
 
-  return await writeDummyDataFile({
+  Object.entries(country_users_counter_Map).forEach((item) => {
+    countries.push({
+      data: {
+        name: item[0],
+        stats: { create: { users: item[1] } },
+      },
+    });
+  });
+
+  await writeDummyDataFile({
     data: users,
     prismaTypes: "User",
     varItemType: 'Omit<User, "createdAt" | "emailVerified" | "image">',
     fileName: "users",
-  }).then(
-    async () =>
-      await writeDummyDataFile({
-        data: usersProfiles,
-        prismaTypes: "UserProfile",
-        varItemType: 'Omit<UserProfile, "createdAt" | "updatedAt">',
-        fileName: "usersProfiles",
-      })
-  );
+  });
+  await writeDummyDataFile({
+    data: usersProfiles,
+    customTopLevelImports: "import type { TPrisma } from '../index';",
+    varItemType: 'Parameters<TPrisma["userProfile"]["create"]>["0"]',
+    fileName: "usersProfiles",
+  });
+  await writeDummyDataFile({
+    data: countries,
+    customTopLevelImports: "import type { TPrisma } from '../index';",
+    varItemType: 'Parameters<TPrisma["country"]["create"]>["0"]',
+    fileName: "countries",
+  });
+
+  return;
 };
 const formatProductsAndCategoriesData = async () => {
-  const products: Omit<Product, "createdAt" | "updatedAt">[] = [];
+  const products: Product[] = [];
   const categories: Category[] = [];
   const categories_MAP: Record<string, number> = {};
 
-  dataProduct.forEach(({ _id, ...item }) => {
+  dataProduct.forEach(({ _id, ...item }, index) => {
     const categoryName = item.category.trim();
     const temp = categories_MAP[categoryName];
     const tempCategories =
@@ -142,13 +172,20 @@ const formatProductsAndCategoriesData = async () => {
     } else {
       tempCategories.count++;
     }
-    products.push({ ...item, id: _id });
+    products.push({
+      ...item,
+      id: _id,
+      createdAt: new Date(
+        new Date("2021-12-30").getTime() - getDaysInMilliseconds(365 + index)
+      ),
+      updatedAt: null,
+    });
   });
 
   await writeDummyDataFile({
     data: products,
     prismaTypes: "Product",
-    varItemType: 'Omit<Product, "createdAt" | "updatedAt">',
+    varItemType: "Product",
     fileName: "products",
   }).then(
     async () =>
@@ -166,7 +203,6 @@ const formatProductsStatsData = async () => {
   const handleDailyData = (
     items: (typeof dataProductStat)["0"]["dailyData"]
   ) => {
-    // ProductStatDailyCreateNestedManyWithoutProductStatInput | ProductStatDailyUncheckedCreateNestedManyWithoutProductStatInput
     const dailyData:
       | Prisma.ProductStatDailyCreateNestedManyWithoutProductStatInput
       | Prisma.ProductStatDailyUncheckedCreateNestedManyWithoutProductStatInput
@@ -204,24 +240,31 @@ const formatProductsStatsData = async () => {
   };
 
   dataProductStat.forEach(
-    ({
-      _id,
-      dailyData,
-      monthlyData,
-      productId,
-      yearlySalesTotal,
-      yearlyTotalSoldUnits,
-    }) => {
+    (
+      {
+        _id,
+        dailyData,
+        monthlyData,
+        productId,
+        yearlySalesTotal,
+        yearlyTotalSoldUnits,
+      },
+      index
+    ) => {
       productsStats.push({
         where: { id: productId },
         data: {
-          productStats: {
+          stats: {
             create: {
               id: _id,
               year: 2021,
               yearlySalesTotal,
               yearlyTotalSoldUnits,
               updatedAt: null,
+              createdAt: new Date(
+                new Date("2021-12-30").getTime() -
+                  getDaysInMilliseconds(365 + index)
+              ),
               monthlyData: {
                 createMany: {
                   data: monthlyData.map(
@@ -229,6 +272,7 @@ const formatProductsStatsData = async () => {
                       totalSales,
                       totalUnits,
                       month: isAValidMonth(month) ? month : Months.january,
+                      // createdAt: new Date(new Date('2021-12-30').getTime() - getDaysInMilliseconds(365 + index)),
                       updatedAt: null,
                     })
                   ),
@@ -262,39 +306,69 @@ const formatTransactionAndAffiliateStatDummyData = async () => {
   const userId_exist_Map = Object.fromEntries(
     dataUser.map((user) => [user._id, true] as const)
   );
+  const users_affiliateStats_MAP: Record<string, UserCreate> = {};
   const products_exist_Map = Object.fromEntries(
     dataProduct.map((user) => [user._id, true] as const)
   );
-  const users_affiliateStatsAndSale_MAP: {
-    [key: string]: UserCreate;
-  } = {};
-  const users_transaction_MAP: {
-    [key: string]: UserCreate;
-  } = {};
+  const userId_found_Map: Record<string, true> = {};
+  const transactionId_transaction_Map = Object.fromEntries(
+    Object.values(dataTransaction).map((item) => [item._id, item])
+  );
 
-  const userId_found_Map: {
-    [key: string]: true;
-  } = {};
+  dataTransaction.forEach((transaction) => {
+    if (!userId_exist_Map[transaction.userId]) return;
 
-  dataAffiliateStat.forEach(({ _id, userId, affiliateSales }) => {
+    transactionId_transaction_Map[transaction._id] = transaction;
+  });
+
+  dataAffiliateStat.forEach(({ _id, userId, affiliateSales }, index) => {
     if (!userId_exist_Map[userId] || userId_found_Map[userId]) return;
 
-    users_affiliateStatsAndSale_MAP[userId] = {
+    users_affiliateStats_MAP[userId] = {
       data: {
         AffiliateStat: {
           create: {
             affiliateSalesCount: affiliateSales.length,
             id: _id,
+            createdAt: new Date(
+              new Date("2021-12-30").getTime() -
+                getDaysInMilliseconds(365 + index + affiliateSales.length)
+            ),
             affiliateSales: {
-              connectOrCreate: [...new Set(affiliateSales)].map((item) => ({
-                create: {
-                  id: item,
-                  transactionsCount: 0,
-                },
-                where: {
-                  id: item,
-                },
-              })),
+              connectOrCreate: [...new Set(affiliateSales)]
+                .filter((item) => transactionId_transaction_Map[item])
+                .map((item) => {
+                  const transaction = transactionId_transaction_Map[item]!;
+
+                  return {
+                    create: {
+                      id: transaction._id,
+                      cost: transaction?.cost,
+                      productsCount: transaction.products.length,
+                      createdAt: new Date(
+                        new Date("2021-12-30").getTime() -
+                          getDaysInMilliseconds(
+                            Math.floor(
+                              (1 - index / dataTransaction.length) * 365
+                            )
+                          )
+                      ),
+                      products: {
+                        connect: transaction.products
+                          .filter((item) => products_exist_Map[item])
+                          .map((productId) => ({ id: productId })),
+                      },
+                      User: {
+                        connect: {
+                          id: transaction.userId,
+                        },
+                      },
+                    },
+                    where: {
+                      id: item,
+                    },
+                  };
+                }),
             },
           },
         },
@@ -305,71 +379,12 @@ const formatTransactionAndAffiliateStatDummyData = async () => {
     userId_found_Map[userId] = true;
   });
 
-  dataTransaction.forEach(({ _id, cost, products, userId }) => {
-    if (!userId_exist_Map[userId]) return;
-
-    users_transaction_MAP[userId] = {
-      data: {
-        transactions: {
-          create: {
-            id: _id,
-            cost,
-            productsCount: products.length,
-            products: {
-              connect: products
-                .filter((item) => products_exist_Map[item])
-                .map((productId) => ({ id: productId })),
-            },
-          },
-        },
-      },
-      where: { id: userId },
-    };
-    // const categoryName = item.category.trim();
-    // const temp = categories_MAP[categoryName];
-    // const tempCategories =
-    //   typeof temp === "number" ? categories[temp] : undefined;
-    // if (!tempCategories) {
-    //   categories_MAP[categoryName] =
-    //     categories.push({
-    //       name: categoryName,
-    //       count: 1,
-    //     }) - 1;
-    // } else {
-    //   tempCategories.count++;
-    // }
-    // products.push({ ...item, id: _id });
-    /*
-    transactions.push({
-      userId,
-      cost,
-      id: _id,
-      productsCount: products.length,
-      affiliateSalesId: null,
-      products: {
-        connect: products.map((productId) => ({ id: productId })),
-      },
-    });
-    productsOnTransaction.push(
-      ...products.map((productId) => ({ id: productId, transactionId: _id }))
-		);
-		*/
-  });
-
   return await writeDummyDataFile({
-    data: Object.values(users_affiliateStatsAndSale_MAP),
+    data: Object.values(users_affiliateStats_MAP),
     customTopLevelImports: "import type { TPrisma } from '../index';",
     varItemType: 'Parameters<TPrisma["user"]["update"]>["0"]',
-    fileName: "users_affiliateStatsAndSale",
-  }).then(
-    async () =>
-      await writeDummyDataFile({
-        data: Object.values(users_transaction_MAP),
-        customTopLevelImports: "import type { TPrisma } from '../index';",
-        varItemType: 'Parameters<TPrisma["user"]["update"]>["0"]',
-        fileName: "users_transaction",
-      })
-  );
+    fileName: "users_affiliateStats",
+  });
 };
 const formatOverallStatsData = async () => {
   const overallStats: Parameters<TPrisma["overallStats"]["create"]>["0"][] = [];

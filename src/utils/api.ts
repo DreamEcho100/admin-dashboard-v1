@@ -8,6 +8,7 @@
 import { httpBatchLink, loggerLink } from "@trpc/client";
 import { createTRPCNext } from "@trpc/next";
 import { type inferRouterInputs, type inferRouterOutputs } from "@trpc/server";
+
 import superjson from "superjson";
 
 import { type AppRouter } from "../server/api/root";
@@ -44,6 +45,16 @@ export const api = createTRPCNext<AppRouter>({
           url: `${getBaseUrl()}/api/trpc`,
         }),
       ],
+      queryClientConfig: {
+        defaultOptions: {
+          queries: {
+            // https://stackoverflow.com/a/72833550/13961420
+            cacheTime: 5 * 60 * 1000,
+            staleTime: 5 * 60 * 1000,
+            refetchOnWindowFocus: false,
+          },
+        },
+      },
     };
   },
   /**

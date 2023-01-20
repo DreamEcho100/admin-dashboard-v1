@@ -6,9 +6,10 @@ import {
   categoriesDummyData,
   productsDummyData,
   productsStatsDummyData,
-  users_affiliateStatsAndSaleDummyData,
+  users_affiliateStatsDummyData,
   users_transactionDummyData,
   overallStatsDummyData,
+  countriesDummyData,
 } from "./dummyData";
 import { formatAllDummyData } from "./formattingDummyData";
 
@@ -32,21 +33,35 @@ if (process.env.NODE_ENV !== "production") {
 
 export type TPrisma = typeof prisma;
 
-const deletingUsersAndUsersProfile = async () => {
+const deletingCountriesUsersAndUsersProfile = async () => {
   console.log("Deleting 'UserProfile' table");
   await prisma.userProfile.deleteMany();
   console.log("Deleting 'User' table");
   await prisma.user.deleteMany();
+  console.log("Deleting 'Country Stats' table");
+  await prisma.countryStats.deleteMany();
+  console.log("Deleting 'Country' table");
+  await prisma.country.deleteMany();
 };
-const seedingUsersAndUsersProfile = async () => {
+const seedingCountriesUsersAndUsersProfile = async () => {
+  countriesDummyData;
+  console.log("Seeding countries data start!");
+  // await prisma.user.createMany({ data: countriesDummyData });
+  await prisma.$transaction(
+    countriesDummyData.map((country) => prisma.country.create(country))
+  );
+  console.log("Seeding countries data End!");
+
   console.log("Seeding users data start!");
   await prisma.user.createMany({ data: usersDummyData });
   console.log("Seeding users data End!");
 
   console.log("Seeding users profiles data start!");
-  await prisma.userProfile.createMany({
-    data: usersProfilesDummyData,
-  });
+  await prisma.$transaction(
+    usersProfilesDummyData.map((userProfile) =>
+      prisma.userProfile.create(userProfile)
+    )
+  );
   console.log("Seeding users profiles data end!");
 };
 
@@ -92,24 +107,21 @@ const deletingAffiliateSalesAndAffiliateStatsAndTransactions = async () => {
   console.log("Deleting 'Transaction' table");
   await prisma.transaction.deleteMany();
 
-  console.log("Deleting 'AffiliateSale' table");
-  await prisma.affiliateSale.deleteMany();
-
   console.log("Deleting 'AffiliateStat' table");
   await prisma.affiliateStat.deleteMany();
 };
 const seedingAffiliateSalesAndAffiliateStatsAndTransactions = async () => {
-  console.log("Seeding users_affiliateStatsAndSale data start!");
-  await prisma.$transaction(
-    users_affiliateStatsAndSaleDummyData.map((item) => prisma.user.update(item))
-  );
-  console.log("Seeding users_affiliateStatsAndSale data End!");
-
   console.log("Seeding users_transaction data start!");
   await prisma.$transaction(
     users_transactionDummyData.map((item) => prisma.user.update(item))
   );
   console.log("Seeding users_transaction data End!");
+
+  console.log("Seeding users_affiliateStats data start!");
+  await prisma.$transaction(
+    users_affiliateStatsDummyData.map((item) => prisma.user.update(item))
+  );
+  console.log("Seeding users_affiliateStats data End!");
 };
 
 const deletingOverallStats = async () => {
@@ -135,19 +147,19 @@ const deleteAll = async () => {
   await deletingAffiliateSalesAndAffiliateStatsAndTransactions();
   await deletingProductsStats();
   await deletingProductsAndCategories();
-  await deletingUsersAndUsersProfile();
+  await deletingCountriesUsersAndUsersProfile();
 };
 
 const seedAll = async () => {
   await deleteAll();
-  await seedingUsersAndUsersProfile();
+  await seedingCountriesUsersAndUsersProfile();
   await seedingProductsAndCategories();
   await seedingProductsStats();
   await seedingAffiliateSalesAndAffiliateStatsAndTransactions();
   await seedingOverallStats();
 };
 
-// await formatAllDummyData();
+await formatAllDummyData();
 await seedAll();
 
 /*

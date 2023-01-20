@@ -6,13 +6,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d24f03239c72c00018e"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "6371259df03239e680000035",
           "year": 2021,
           "yearlySalesTotal": 7152,
           "yearlyTotalSoldUnits": 1414,
           "updatedAt": null,
+          "createdAt": "2020-12-30T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -107,13 +108,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d24f03239c72c00018f"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "6371259ef032398675000198",
           "year": 2021,
           "yearlySalesTotal": 2192,
           "yearlyTotalSoldUnits": 1169,
           "updatedAt": null,
+          "createdAt": "2020-12-29T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -208,13 +210,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d24f03239c72c000190"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "6371259df03239b7f7000083",
           "year": 2021,
           "yearlySalesTotal": 4356,
           "yearlyTotalSoldUnits": 4305,
           "updatedAt": null,
+          "createdAt": "2020-12-28T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -309,13 +312,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d24f03239c72c000191"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "6371259df03239444100035a",
           "year": 2021,
           "yearlySalesTotal": 9976,
           "yearlyTotalSoldUnits": 3579,
           "updatedAt": null,
+          "createdAt": "2020-12-27T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -410,13 +414,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d24f03239867500012a"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "6371259df03239d81e000083",
           "year": 2021,
           "yearlySalesTotal": 3602,
           "yearlyTotalSoldUnits": 1491,
           "updatedAt": null,
+          "createdAt": "2020-12-26T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -511,13 +516,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d24f03239867500012b"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "6371259df03239eb0c000002",
           "year": 2021,
           "yearlySalesTotal": 4819,
           "yearlyTotalSoldUnits": 4228,
           "updatedAt": null,
+          "createdAt": "2020-12-25T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -612,13 +618,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d24f03239867500012c"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "6371259df032395b33000198",
           "year": 2021,
           "yearlySalesTotal": 4091,
           "yearlyTotalSoldUnits": 4832,
           "updatedAt": null,
+          "createdAt": "2020-12-24T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -713,13 +720,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d24f03239867500012d"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "6371259df03239d591000395",
           "year": 2021,
           "yearlySalesTotal": 6435,
           "yearlyTotalSoldUnits": 4627,
           "updatedAt": null,
+          "createdAt": "2020-12-23T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -814,13 +822,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d24f03239b7f7000015"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "6371259df032395694000083",
           "year": 2021,
           "yearlySalesTotal": 3309,
           "yearlyTotalSoldUnits": 2331,
           "updatedAt": null,
+          "createdAt": "2020-12-22T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -915,13 +924,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d24f03239b7f7000016"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "6371259df032396b8e000083",
           "year": 2021,
           "yearlySalesTotal": 5264,
           "yearlyTotalSoldUnits": 1782,
           "updatedAt": null,
+          "createdAt": "2020-12-21T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -1016,13 +1026,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d24f03239b7f7000017"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "6371259df03239bef0000198",
           "year": 2021,
           "yearlySalesTotal": 3238,
           "yearlyTotalSoldUnits": 2564,
           "updatedAt": null,
+          "createdAt": "2020-12-20T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -1117,13 +1128,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d24f03239b7f7000018"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "6371259df03239f793000002",
           "year": 2021,
           "yearlySalesTotal": 7954,
           "yearlyTotalSoldUnits": 4999,
           "updatedAt": null,
+          "createdAt": "2020-12-19T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -1218,13 +1230,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d24f0323944410002ec"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "6371259df03239528f000083",
           "year": 2021,
           "yearlySalesTotal": 5826,
           "yearlyTotalSoldUnits": 3386,
           "updatedAt": null,
+          "createdAt": "2020-12-18T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -1319,13 +1332,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d24f0323944410002ed"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "6371259ef03239f09e0001fc",
           "year": 2021,
           "yearlySalesTotal": 2947,
           "yearlyTotalSoldUnits": 1203,
           "updatedAt": null,
+          "createdAt": "2020-12-17T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -1420,13 +1434,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d24f0323944410002ee"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "6371259df03239db69000198",
           "year": 2021,
           "yearlySalesTotal": 2128,
           "yearlyTotalSoldUnits": 703,
           "updatedAt": null,
+          "createdAt": "2020-12-16T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -1521,13 +1536,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d24f0323944410002ef"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "6371259df03239b913000083",
           "year": 2021,
           "yearlySalesTotal": 7841,
           "yearlyTotalSoldUnits": 3889,
           "updatedAt": null,
+          "createdAt": "2020-12-15T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -1622,13 +1638,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d24f03239d81e000015"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "6371259df03239cdc5000083",
           "year": 2021,
           "yearlySalesTotal": 5994,
           "yearlyTotalSoldUnits": 2338,
           "updatedAt": null,
+          "createdAt": "2020-12-14T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -1723,13 +1740,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d24f03239d81e000016"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "6371259df032399c00000198",
           "year": 2021,
           "yearlySalesTotal": 5650,
           "yearlyTotalSoldUnits": 2225,
           "updatedAt": null,
+          "createdAt": "2020-12-13T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -1824,13 +1842,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d24f03239d81e000017"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "6371259df0323986f3000198",
           "year": 2021,
           "yearlySalesTotal": 1016,
           "yearlyTotalSoldUnits": 2672,
           "updatedAt": null,
+          "createdAt": "2020-12-12T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -1925,13 +1944,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d24f03239d81e000018"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "6371259df03239d40b0000d3",
           "year": 2021,
           "yearlySalesTotal": 7368,
           "yearlyTotalSoldUnits": 1734,
           "updatedAt": null,
+          "createdAt": "2020-12-11T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -2026,13 +2046,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d24f032390a34000327"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "6371259df03239d40b0000d4",
           "year": 2021,
           "yearlySalesTotal": 7667,
           "yearlyTotalSoldUnits": 2377,
           "updatedAt": null,
+          "createdAt": "2020-12-10T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -2127,13 +2148,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d24f032390a34000328"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "6371259ef03239d40b0000d5",
           "year": 2021,
           "yearlySalesTotal": 6058,
           "yearlyTotalSoldUnits": 4381,
           "updatedAt": null,
+          "createdAt": "2020-12-09T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -2228,13 +2250,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d24f032390a34000329"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "6371259ef03239d40b0000d6",
           "year": 2021,
           "yearlySalesTotal": 6371,
           "yearlyTotalSoldUnits": 68,
           "updatedAt": null,
+          "createdAt": "2020-12-08T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -2329,13 +2352,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d24f032390a3400032a"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "6371259ef03239d40b0000d7",
           "year": 2021,
           "yearlySalesTotal": 6612,
           "yearlyTotalSoldUnits": 2642,
           "updatedAt": null,
+          "createdAt": "2020-12-07T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -2430,13 +2454,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d24f032395b3300012a"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "6371259ef03239d40b0000d8",
           "year": 2021,
           "yearlySalesTotal": 2803,
           "yearlyTotalSoldUnits": 2247,
           "updatedAt": null,
+          "createdAt": "2020-12-06T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -2531,13 +2556,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d24f032395b3300012b"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "6371259ff03239d40b0000d9",
           "year": 2021,
           "yearlySalesTotal": 9751,
           "yearlyTotalSoldUnits": 1501,
           "updatedAt": null,
+          "createdAt": "2020-12-05T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -2632,13 +2658,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d24f032395b3300012c"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "6371259ff03239d40b0000da",
           "year": 2021,
           "yearlySalesTotal": 1810,
           "yearlyTotalSoldUnits": 4730,
           "updatedAt": null,
+          "createdAt": "2020-12-04T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -2733,13 +2760,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d24f032395b3300012d"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "6371259ff03239d40b0000db",
           "year": 2021,
           "yearlySalesTotal": 5256,
           "yearlyTotalSoldUnits": 4776,
           "updatedAt": null,
+          "createdAt": "2020-12-03T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -2834,13 +2862,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d25f03239d591000327"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "637125a0f03239d40b0000dc",
           "year": 2021,
           "yearlySalesTotal": 2421,
           "yearlyTotalSoldUnits": 4366,
           "updatedAt": null,
+          "createdAt": "2020-12-02T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
@@ -2935,13 +2964,14 @@ const productsStatsDummyData: Parameters<TPrisma["product"]["update"]>["0"][] = 
       "id": "63701d25f03239d591000328"
     },
     "data": {
-      "productStats": {
+      "stats": {
         "create": {
           "id": "637125a0f03239d40b0000dd",
           "year": 2021,
           "yearlySalesTotal": 9959,
           "yearlyTotalSoldUnits": 2071,
           "updatedAt": null,
+          "createdAt": "2020-12-01T00:00:00.000Z",
           "monthlyData": {
             "createMany": {
               "data": [
